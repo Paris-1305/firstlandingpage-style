@@ -1,0 +1,201 @@
+.{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b2b2b2;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+   // padding: 35px 5%;
+}
+header{
+    padding: 3px;
+}
+nav .logo{
+padding: 20px;
+color: #ffffff;
+font-size: 35px;
+font-weight: 700;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 16px 20px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav ul li a{
+    font-size:20px;
+    list-style: none;
+    text-decoration: none;
+}
+nav .navlinks button{
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color:blue;
+}
+li:hover{
+    background-color: rgb(135, 134, 138);
+}
+.navlinks  button:hover{
+    background-color: aqua;
+}
+nav .menubtn{
+font-size: 30px;
+font-weight: bolder;
+cursor:pointer;
+display: none;
+}
+@media screen and (max-width:600px){
+   nav  .menubtn{
+        display:flex;
+    }
+    nav .navlinks{
+        display: none;
+    }
+    .sidenav{
+        display: block  !important;
+    }
+}
+.sidenav{
+    height:100%;
+    position: fixed;
+    top:0;
+    right:0%;
+    background-color: rgb(143, 119, 233);
+    overflow-x: hidden;
+    transition: 0.3 ease-in;
+    padding: 40px;
+    display: none;
+}
+.sidenav li a{
+padding: 8px 8px 8px 40px;
+list-style: none;
+text-decoration: none;
+display: block;
+font-size: 25px;
+text-align: center;
+color:white;
+transition:0.3s;
+
+}
+.sidenav  button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color:blue;
+    border-style: none;
+}
+.sidenav a:hover{
+    color:white;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top:10px;
+    right:25px;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+#column{
+    position: absolute;
+    bottom: 200px;
+    padding-right: 50px;
+}
+#column p{
+    letter-spacing: 10px;
+    color:#454140;
+    font-size:35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+ #ig{
+    position: absolute;
+    right:10px;
+    overflow: auto;
+    width: 50%;
+    background-image: url("rolex.png");
+    bottom: 50px;
+    background-size: cover;
+    object-fit:none;
+}
+  .watch.imag:hover {
+    opacity: 0.3;
+  }
+  
+.watch{
+    
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    background-image: url("pictures/watch.png");
+    position:relative;
+    top:500px;
+    padding: auto;
+    float: right;
+    right: 10%;
+    margin-top: 40px;
+    margin-bottom: 570px;
+}
+#column button{
+    width:150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 17px;
+    font-weight: 600;
+    background-color:white;
+}
+#column button:hover{
+    background-color: aqua;
+} 
+.sum p{
+position: absolute;
+word-spacing: 10px;
+padding: 15px;
+font-weight: 400;
+font-size:30px;
+top:650px;
+}
+.sum p::first-line{
+    color:#fdef96;
+    font-weight: 600;
+}
+
+
+/*responsiv headers*/
+@media screen and(max-width:960px){
+.column2 img{
+    width: 350px;
+}
+.column p{
+    font-size: 17px;
+}
+.rhow{
+    margin-top: 80px;
+}
+{
+    
+}
+@media  screen and (max-width:600px) {
+    .rhow{
+        flex-direction: column;
+    }
+    
+}
